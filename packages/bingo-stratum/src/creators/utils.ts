@@ -18,7 +18,7 @@ export function applyZodDefaults<Shape extends AnyOptionalShape>(
 	);
 	if (unrecognized) {
 		throw new Error(
-			`Unknown Addon(s) for ${blockName ? `Block ${blockName}` : "Block"}: ${unrecognized.keys.join(", ")}.`,
+			`Unknown Prop(s) for ${blockName ? `Block ${blockName}` : "Block"}: ${unrecognized.keys.join(", ")}.`,
 		);
 	}
 

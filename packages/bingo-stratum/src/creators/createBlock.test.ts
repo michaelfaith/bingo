@@ -159,7 +159,7 @@ describe(createBlock, () => {
 					props: { names: [], unknown: true } as { names: string[] },
 				}),
 			).toThrowErrorMatchingInlineSnapshot(
-				`[Error: Unknown Addon(s) for Block Example: unknown.]`,
+				`[Error: Unknown Prop(s) for Block Example: unknown.]`,
 			);
 		});
 
@@ -179,7 +179,7 @@ describe(createBlock, () => {
 					props: { names: [], unknown: true } as { names: string[] },
 				}),
 			).toThrowErrorMatchingInlineSnapshot(
-				`[Error: Unknown Addon(s) for Block: unknown.]`,
+				`[Error: Unknown Prop(s) for Block: unknown.]`,
 			);
 		});
 
